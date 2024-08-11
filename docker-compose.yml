@@ -8,8 +8,6 @@ services:
       - backend
     volumes:
       - ./web:/app
-    environment:
-      - VITE_BACKEND_URL=http://backend:5001 # Pass backend container's URL as an environment variable
 
   backend:
     build: ./DownTheTube-backend-python
