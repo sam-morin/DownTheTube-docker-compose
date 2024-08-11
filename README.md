@@ -60,19 +60,9 @@ Clone the frontend and backend
 git clone https://github.com/sam-morin/DownTheTube.git && git clone https://github.com/sam-morin/DownTheTube-backend-python.git
 ```
 
-### 2. Build and run frontend and backend
-
-```shell
-docker compose up -d
-```
-
-### 3. Access the web portal 
-
-Unless you changed it, the web GUI will run on http://localhost:8001
-
 ### IMPORTANT! - Be sure to set your server IP to access on other devices in your network
 
-If accessing from any other machine on your network, for example: http://192.168.20.78:8001
+If you plan to access DownTheTube from any other machine on your network you must set the server IP!
 
 Modify the variable in `./DownTheTube/.env` to reflect the IP of the machine that this all will be running on:
 ```sh
@@ -94,3 +84,13 @@ Modify this part in `docker-compose.yml` file:
 Replace `8001` with the port you'd like to run it on 
 
 (but leave port `80` on the right side of the colon, and don't modify the backend ports)
+
+### 2. Build and run frontend and backend
+
+```shell
+docker compose up -d
+```
+
+### 3. Access the web portal 
+
+Unless you changed it, the web GUI will run on http://localhost:8001
