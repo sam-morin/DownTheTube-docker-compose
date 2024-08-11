@@ -23,7 +23,7 @@
 A basic YouTube viderooo downloader web GUI that runs in a docker container
 
 ### Background:
-There aren't really any self-hosted YouTube video downloader web applications that I was able to find on Github. I only searched for a few minutes though, so I'm sure there are some out there, maybe. Or maybe YouTube broke into the houses of those who had such self-hosted applications published on Github and kidnapped their families unless they took the repo down or went private. Either way, I've notified my family and we're ready for you Google.
+There aren't really any self-hosted YouTube video downloader web applications that I was able to find on Github. I only searched for a few minutes though, so I'm sure there are some out there, maybe.
 
 ## Objectives:
 - Query: 
@@ -49,8 +49,15 @@ There aren't really any self-hosted YouTube video downloader web applications th
 ### Production
 
 1. Pull the source and CD
+Pull the docker compose repo
 ```shell
-git pull https://github.com/sam-morin/DownTheTub-Docker-Compose.git && cd DownTheTub-Docker-Compose
+git clone https://github.com/sam-morin/DownTheTube-docker-compose.git && cd DownTheTube-docker-dompose
+```
+
+Pull the frontend and backend
+```shell
+git clone https://github.com/sam-morin/DownTheTube.git
+git clone https://github.com/sam-morin/DownTheTube-backend-python.git
 ```
 
 2. Build and run frontend and backend

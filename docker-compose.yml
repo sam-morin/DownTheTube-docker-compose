@@ -1,18 +1,18 @@
 version: '3'
 services:
-  web:
-    build: ./web
+  frontend:
+    build: ./DownTheTube
     ports:
       - "8001:80" # Map the container's port 5173 to the host's port 5173
     depends_on:
-      - server
+      - backend
     volumes:
       - ./web:/app
 
-  server:
-    build: ./server
+  backend:
+    build: ./DownTheTube-backend-python
     ports:
       - "5001:5001" # Map the container's port 5001 to the host's port 5001
     volumes:
-      - ./server:/app
-      - ./server/downloaded-videos:/app/downloaded-videos # Map downloaded-videos to be accessible outside the container
+      - ./DownTheTube-backend-python:/app
+      - ./DownTheTube-backend-python/downloaded-videos:/app/downloaded-videos # Map downloaded-videos to be accessible outside the container
