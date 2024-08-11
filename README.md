@@ -70,7 +70,15 @@ docker compose up -d
 
 Unless you changed it, the web GUI will run on http://localhost:8001
 
-Or if accessing from another machine on your network, for example: http://192.168.20.78:8001
+### IMPORTANT! - Be sure to set your server IP to access on other devices in your network
+
+If accessing from any other machine on your network, for example: http://192.168.20.78:8001
+
+Modify the variable in `./DownTheTube/.env` to reflect the IP of the machine that this all will be running on:
+```sh
+VITE_BACKEND_URL=http://localhost:5001
+# Change this to the IP of your server! Leave :5001
+```
 
 ### Changing the web GUI port
 
