@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build: ./web
+    ports:
+      - "5173:5173" # Map the container's port 5173 to the host's port 5173
+    depends_on:
+      - server
+    volumes:
+      - ./web:/app
+
+  server:
+    build: ./server
+    ports:
+      - "5001:5001" # Map the container's port 5001 to the host's port 5001
+    volumes:
+      - ./server:/app
+      - ./server/downloaded-videos:/app/downloaded-videos # Map downloaded-videos to be accessible outside the container
