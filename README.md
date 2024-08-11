@@ -83,4 +83,6 @@ Modify this part in `docker-compose.yml` file:
       - "8001:80"
 ...
 ```
-Replace `8001` with the port you'd like to run it on but leave port `80` on the right side of the colon
+Replace `8001` with the port you'd like to run it on 
+
+(but leave port `80` on the right side of the colon, and don't modify the backend ports)
