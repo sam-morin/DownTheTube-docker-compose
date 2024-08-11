@@ -57,3 +57,7 @@ git pull https://github.com/sam-morin/DownTheTub-Docker-Compose.git && cd DownTh
 ```shell
 docker compose up -d
 ```
+
+3. Access the web portal
+<a href="http://localhost:8001">http://localhost:8001</a>
+Or if accessing from another machine on your network, for example: http://192.168.20.78:8001
