@@ -3,16 +3,18 @@ services:
   frontend:
     build: ./DownTheTube
     ports:
-      - "8001:80" # Map the container's port 5173 to the host's port 5173
+      - "8001:80"
     depends_on:
       - backend
     volumes:
       - ./web:/app
+    environment:
+      - VITE_BACKEND_URL=http://backend:5001 # Pass backend container's URL as an environment variable
 
   backend:
     build: ./DownTheTube-backend-python
     ports:
-      - "5001:5001" # Map the container's port 5001 to the host's port 5001
+      - "5001:5001"
     volumes:
       - ./DownTheTube-backend-python:/app
       - ./DownTheTube-backend-python/downloaded-videos:/app/downloaded-videos # Map downloaded-videos to be accessible outside the container
