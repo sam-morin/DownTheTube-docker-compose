@@ -48,12 +48,12 @@ There aren't really any self-hosted YouTube video downloader web applications th
 
 ### Production
 
-1. Pull the source and CD
-Pull the docker compose repo
+1. Clone the source and CD
+Clone the docker compose repo
 ```shell
 git clone https://github.com/sam-morin/DownTheTube-docker-compose.git && cd DownTheTube-docker-compose
 ```
-Pull the frontend and backend
+Clone the frontend and backend
 ```shell
 git clone https://github.com/sam-morin/DownTheTube.git && git clone https://github.com/sam-morin/DownTheTube-backend-python.git
 ```
