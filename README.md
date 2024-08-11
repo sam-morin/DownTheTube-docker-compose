@@ -51,13 +51,11 @@ There aren't really any self-hosted YouTube video downloader web applications th
 1. Pull the source and CD
 Pull the docker compose repo
 ```shell
-git clone https://github.com/sam-morin/DownTheTube-docker-compose.git && cd DownTheTube-docker-dompose
+git clone https://github.com/sam-morin/DownTheTube-docker-compose.git && cd DownTheTube-docker-compose
 ```
-
 Pull the frontend and backend
 ```shell
-git clone https://github.com/sam-morin/DownTheTube.git
-git clone https://github.com/sam-morin/DownTheTube-backend-python.git
+git clone https://github.com/sam-morin/DownTheTube.git && git clone https://github.com/sam-morin/DownTheTube-backend-python.git
 ```
 
 2. Build and run frontend and backend
@@ -65,6 +63,6 @@ git clone https://github.com/sam-morin/DownTheTube-backend-python.git
 docker compose up -d
 ```
 
-3. Access the web portal
+3. Access the web portal on port 8001 (or whatever you changed it to, if you changed it)
 <a href="http://localhost:8001">http://localhost:8001</a>
 Or if accessing from another machine on your network, for example: http://192.168.20.78:8001
