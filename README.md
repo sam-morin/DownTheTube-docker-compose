@@ -71,3 +71,16 @@ docker compose up -d
 Unless you changed it, the web GUI will run on http://localhost:8001
 
 Or if accessing from another machine on your network, for example: http://192.168.20.78:8001
+
+### Changing the web GUI port
+
+Modify this part in `docker-compose.yml` file:
+```yml
+...
+  frontend:
+    build: ./DownTheTube
+    ports:
+      - "8001:80"
+...
+```
+Replace `8001` with the port you'd like to run it on but leave port `80` on the right side of the colon
