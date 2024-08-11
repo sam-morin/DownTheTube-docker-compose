@@ -61,10 +61,13 @@ git clone https://github.com/sam-morin/DownTheTube.git && git clone https://gith
 ```
 
 ### 2. Build and run frontend and backend
+
 ```shell
 docker compose up -d
 ```
 
-3. Access the web portal on port 8001 (or whatever you changed it to, if you changed it)
-<a href="http://localhost:8001">http://localhost:8001</a>
+### 3. Access the web portal 
+
+Unless you changed it, the web GUI will run on http://localhost:8001
+
 Or if accessing from another machine on your network, for example: http://192.168.20.78:8001
